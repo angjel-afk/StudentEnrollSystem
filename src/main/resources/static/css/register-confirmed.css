@@ -1,0 +1,40 @@
+html {
+  background-color: #012345;
+}
+
+body {
+  font-family: 'Verdana', sans-serif;
+  height: 100vh;
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+h2 {
+  text-align: center;
+
+  color: white;
+}
+
+h3 {
+  text-align: center;
+
+  color: white;
+}
+
+.profile_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-left: 45%;
+  margin-top: 15%;
+  border: 10px solid #ccc;
+  border-radius: 50%;
+}
+

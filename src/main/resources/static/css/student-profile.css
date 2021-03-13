@@ -1,0 +1,425 @@
+/*  
+html {
+  background-color: #012345;
+}
+
+body {
+  background-color: #012345;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #456789;
+}
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #012345;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.student-profile .card {
+  border-radius: 15px;
+}
+
+.student-profile .card .card-header .profile_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px auto;
+  border: 10px solid #ccc;
+  border-radius: 50%;
+}
+
+.student-profile .card h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.student-profile .card p {
+  font-size: 16px;
+  color: #000;
+}
+
+.student-profile .table th,
+.student-profile .table td {
+  font-size: 14px;
+  padding: 9px 10px;
+  color: #000;
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #23395d;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+Style the sidenav links and the dropdown button
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+On mouse-over
+.sidenav a:hover, .dropdown-btn:hover {
+  color: white;
+}
+
+Main content
+.main {
+  margin-left: 200px; Same as the width of the sidenav
+  font-size: 20px; Increased text to enable scrolling
+  margin-left: 20px;
+}
+
+a:hover, a:active {
+  background-color: #012345;
+}
+
+Add an active class to the active dropdown button
+.active {
+  background-color: green;
+  color: white;
+}
+
+Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+Optional: Style the caret down icon
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+Some media queries for responsiveness
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+ */
+ 
+ 
+ body{margin-top:20px;
+color: #bcd0f7;
+    background: white;
+    height: 100%;
+}
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+    
+}
+.account-settings .user-profile .user-avatar {
+    margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    
+}
+.account-settings .user-profile h5.user-name {
+    margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.account-settings .about {
+    margin: 1rem 0 0 0;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.card {
+    background: #272E48;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 1rem;
+    
+}
+.form-control {
+    border: 1px solid #596280;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: .825rem;
+    background: #1A233A;
+    color: #bcd0f7;
+}
+ 
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#012345;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+<!-- 
+
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #23395d;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #a9a9a9;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+#progressBar {
+    width: 20rem;
+    height: 1rem;
+    border: 0.2rem solid #9e9e9e;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 1.5rem;
+    background-color: #fff;
+}
+
+#progressBarFull {
+    height: 0.6rem;
+    background-color: #23395d;
+    border-radius: 2px 5px 5px 2px;
+    width: 0%;
+}
+
+#progressBarEnrolled {
+    height: 0.6rem;
+    background-color: #23395d;
+    border-radius: 2px 5px 5px 2px;
+    width: 0%;
+}
+
+
+#status {
+  margin-bottom: 1em;
+}
+.status {
+  background: #fff;
+  margin-bottom: .25em;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.status {
+  position: relative;
+  height: 1em;
+  line-height: 1em;
+  padding: .5em;
+  padding-left: 2em;
+  transition: color 500ms;
+}
+.status:before, .status:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  transition: all 500ms;
+}
+.status.-pending {
+  color: #012345;  
+}
+.status.-pending:before, .status.-pending:after {
+  background: #012345;
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.status.-pending:before {
+  width: .25em;
+  height: .25em;
+  top: .5em;
+  left: .875em;
+  border-radius: .125em;
+  transform-origin: 50% .5em;
+}
+.status.-pending:after {
+  width: .25em;
+  height: .25em;
+  top: 1.25em;
+  left: .875em;
+  border-radius: .125em;
+  transform-origin: 50% -.25em;
+}
+
+
+
+.progress, .alert {
+  margin: 5px;
+  height: 10px;
+  width: 200px;
+  border-radius: 25px;
+  border: black solid 1px;
+}
+
+.progress-bar {
+  background-color: red;
+  height:10px;
+  width: 0px;
+}
+
+
+ 
+ 
